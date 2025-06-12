@@ -1,61 +1,196 @@
-<div class="container">
-  <div class="interactive-box" id="box1">
-    <div class="box-header">Top Box</div>
-    <div class="box-content">
-      <label>Color:
-        <select>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Green</option>
-        </select>
-      </label>
-      <label>Size:
-        <select>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-        </select>
-      </label>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Expandable Boxes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="option-box" data-value="1">
+        <label class="box-label">
+          <div class="box">
+            <div class="top-row">
+              <div class="label-group">
+                <span class="custom-radio">
+                  <input type="radio" name="unit" value="1" />
+                  <span class="checkmark"></span>
+                </span>
+                <span class="label-text">1 Unit</span>
+                <span class="badge">10% Off</span>
+              </div>
+              <div class="price">
+                <div class="current">$10.00 USD</div>
+                <div class="original">$24.00 USD</div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="dropdown-columns">
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Size</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Color</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>Color</option>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                    <select>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
 
-  <div class="interactive-box" id="box2">
-    <div class="box-header">Middle Box</div>
-    <div class="box-content">
-      <label>Color:
-        <select>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Green</option>
-        </select>
-      </label>
-      <label>Size:
-        <select>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-        </select>
-      </label>
-    </div>
-  </div>
+      <div class="option-box active" data-value="2">
+        <label class="box-label">
+          <div class="box">
+            <div class="top-row">
+              <div class="label-group">
+                <span class="custom-radio">
+                  <input type="radio" name="unit" value="1" checked />
+                  <span class="checkmark"></span>
+                </span>
+                <span class="label-text">2 Unit</span>
+                <span class="badge">20% Off</span>
+              </div>
+              <div class="price">
+                <div class="current">$18.00 USD</div>
+                <div class="original">$24.00 USD</div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="dropdown-columns">
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Size</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Color</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>Color</option>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                    <select>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </label>
+      </div>
 
-  <div class="interactive-box" id="box3">
-    <div class="box-header">Bottom Box</div>
-    <div class="box-content">
-      <label>Color:
-        <select>
-          <option>Red</option>
-          <option>Blue</option>
-          <option>Green</option>
-        </select>
-      </label>
-      <label>Size:
-        <select>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-        </select>
-      </label>
+      <div class="option-box" data-value="3">
+        <label class="box-label">
+          <div class="box">
+            <div class="top-row">
+              <div class="label-group">
+                <span class="custom-radio">
+                  <input type="radio" name="unit" value="1" />
+                  <span class="checkmark"></span>
+                </span>
+                <span class="label-text">3 Unit</span>
+                <span class="badge">30% Off</span>
+              </div>
+              <div class="price">
+                <div class="current">$12.00 USD</div>
+                <div class="original">$24.00 USD</div>
+              </div>
+            </div>
+            <div class="details">
+              <div class="dropdown-columns">
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Size</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                    <select>
+                      <option>S</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="dropdown-column">
+                  <label class="dropdown-label">Color</label>
+                  <div class="dropdown-row">
+                    <select>
+                      <option>Color</option>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                    <select>
+                      <option>Red</option>
+                      <option>Blue</option>
+                      <option>Green</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <div class="end-row">
+        <span class="delivery-label">Free Delivery</span>
+        <span>Total : $18 USD</span>
+      </div>
+
+      <div class="button-group">
+        <button class="button">+ Add to Cart</button>
+      </div>
     </div>
-  </div>
-</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
